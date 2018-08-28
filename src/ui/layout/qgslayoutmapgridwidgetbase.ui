@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>403</width>
-    <height>734</height>
+    <width>430</width>
+    <height>659</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -48,8 +48,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>389</width>
-        <height>1417</height>
+        <width>410</width>
+        <height>1552</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -309,36 +309,9 @@
          <property name="syncGroup" stdset="0">
           <string notr="true">composermapgrid</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout_3" columnstretch="0,1,1">
-          <item row="0" column="0">
-           <widget class="QLabel" name="mFrameStyleLabel_2">
-            <property name="text">
-             <string>Frame style</string>
-            </property>
-            <property name="wordWrap">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="mFrameWidthLabel">
-            <property name="text">
-             <string>Frame size</string>
-            </property>
-            <property name="wordWrap">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="mFramePenLabel">
-            <property name="text">
-             <string>Frame line thickness</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QgsDoubleSpinBox" name="mGridFramePenSizeSpinBox">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="3">
+           <widget class="QgsDoubleSpinBox" name="mGridFrameOffsetSpinBox">
             <property name="suffix">
              <string> mm</string>
             </property>
@@ -347,7 +320,7 @@
             </property>
            </widget>
           </item>
-          <item row="2" column="2">
+          <item row="2" column="3">
            <widget class="QgsColorButton" name="mGridFramePenColorButton">
             <property name="minimumSize">
              <size>
@@ -366,84 +339,7 @@
             </property>
            </widget>
           </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="mFrameFillLabel">
-            <property name="text">
-             <string>Frame fill colors</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QgsColorButton" name="mGridFrameFill1ColorButton">
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>100</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="2">
-           <widget class="QgsColorButton" name="mGridFrameFill2ColorButton">
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>100</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="0" colspan="3">
-           <layout class="QGridLayout" name="gridLayout_4">
-            <item row="0" column="0">
-             <widget class="QCheckBox" name="mCheckGridLeftSide">
-              <property name="text">
-               <string>Left side</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QCheckBox" name="mCheckGridRightSide">
-              <property name="text">
-               <string>Right side</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QCheckBox" name="mCheckGridTopSide">
-              <property name="text">
-               <string>Top side</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QCheckBox" name="mCheckGridBottomSide">
-              <property name="text">
-               <string>Bottom side</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="0" column="1" colspan="2">
+          <item row="0" column="2" colspan="2">
            <widget class="QComboBox" name="mFrameStyleComboBox">
             <item>
              <property name="text">
@@ -477,7 +373,91 @@
             </item>
            </widget>
           </item>
-          <item row="1" column="1" colspan="2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="mFrameStyleLabel_2">
+            <property name="text">
+             <string>Frame style</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="mTopDivisionsLabel">
+            <property name="text">
+             <string>Top divisions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="mFrameFillLabel">
+            <property name="text">
+             <string>Frame fill colors</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="mFrameWidthLabel">
+            <property name="text">
+             <string>Frame size </string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QgsColorButton" name="mGridFrameFill1ColorButton">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QgsDoubleSpinBox" name="mGridFramePenSizeSpinBox">
+            <property name="suffix">
+             <string> mm</string>
+            </property>
+            <property name="showClearButton" stdset="0">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="mBottomDivisionsLabel">
+            <property name="text">
+             <string>Bottom divisions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="mLeftDivisionsLabel">
+            <property name="text">
+             <string>Left divisions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="mFramePenLabel">
+            <property name="text">
+             <string>Frame line thickness</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
            <widget class="QgsDoubleSpinBox" name="mFrameWidthSpinBox">
             <property name="suffix">
              <string> mm</string>
@@ -494,38 +474,75 @@
             </property>
            </widget>
           </item>
-          <item row="4" column="0">
-           <widget class="QLabel" name="mLeftDivisionsLabel">
+          <item row="3" column="3">
+           <widget class="QgsColorButton" name="mGridFrameFill2ColorButton">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
             <property name="text">
-             <string>Left divisions</string>
+             <string/>
             </property>
            </widget>
           </item>
-          <item row="6" column="0">
-           <widget class="QLabel" name="mTopDivisionsLabel">
-            <property name="text">
-             <string>Top divisions</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="0">
-           <widget class="QLabel" name="mBottomDivisionsLabel">
-            <property name="text">
-             <string>Bottom divisions</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1" colspan="2">
+          <item row="4" column="2" colspan="2">
            <widget class="QComboBox" name="mFrameDivisionsLeftComboBox"/>
           </item>
-          <item row="5" column="1" colspan="2">
+          <item row="5" column="2" colspan="2">
            <widget class="QComboBox" name="mFrameDivisionsRightComboBox"/>
           </item>
-          <item row="6" column="1" colspan="2">
+          <item row="6" column="2" colspan="2">
            <widget class="QComboBox" name="mFrameDivisionsTopComboBox"/>
           </item>
-          <item row="7" column="1" colspan="2">
+          <item row="7" column="2" colspan="2">
            <widget class="QComboBox" name="mFrameDivisionsBottomComboBox"/>
+          </item>
+          <item row="8" column="0" colspan="4">
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="mCheckGridLeftSide">
+              <property name="text">
+               <string>Left side</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QCheckBox" name="mCheckGridRightSide">
+              <property name="text">
+               <string>Right side</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QCheckBox" name="mCheckGridTopSide">
+              <property name="text">
+               <string>Top side</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QCheckBox" name="mCheckGridBottomSide">
+              <property name="text">
+               <string>Bottom side</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="mFrameOffsetLabel">
+            <property name="text">
+             <string>offset</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -536,7 +553,7 @@
           <bool>true</bool>
          </property>
          <property name="title">
-          <string>Draw coordinates</string>
+          <string>&amp;Draw coordinates</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -814,7 +831,6 @@
   <tabstop>mGridFrameGroupBox</tabstop>
   <tabstop>mFrameStyleComboBox</tabstop>
   <tabstop>mFrameWidthSpinBox</tabstop>
-  <tabstop>mGridFramePenSizeSpinBox</tabstop>
   <tabstop>mGridFramePenColorButton</tabstop>
   <tabstop>mGridFrameFill1ColorButton</tabstop>
   <tabstop>mGridFrameFill2ColorButton</tabstop>
